@@ -1,0 +1,18 @@
+$react-searchlight-options: (
+  overlay-color: rgba(0, 0, 0, 0.89),
+  overlay-size: 2000px,
+  z-index: 10,
+) !default;
+
+.react-searchlight {
+  $overlay-color: map-get($map: $react-searchlight-options, $key:overlay-color );
+  $overlay-size: map-get($map: $react-searchlight-options, $key:overlay-size );
+  $z-index: map-get($map: $react-searchlight-options, $key:z-index );
+
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 0 $overlay-size $overlay-color;
+  background: transparent;;
+  z-index: $z-index;;
+}
