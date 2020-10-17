@@ -1,7 +1,7 @@
-import noop from '@feizheng/noop';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import Draggable from 'react-draggable';
 
 const CLASS_NAME = 'react-searchlight';
 
@@ -14,28 +14,21 @@ export default class ReactSearchlight extends Component {
      */
     className: PropTypes.string,
     /**
-     * The changed value.
+     * The default options for react-draggable.
      */
-    value: PropTypes.object,
-    /**
-     * The change handler.
-     */
-    onChange: PropTypes.func
-  };
-
-  static defaultProps = {
-    value: null,
-    onChange: noop
+    options: PropTypes.object
   };
 
   render() {
-    const { className, ...props } = this.props;
+    const { className, options, ...props } = this.props;
     return (
-      <div
-        data-component={CLASS_NAME}
-        className={classNames(CLASS_NAME, className)}
-        {...props}
-      />
+      <Draggable {...options}>
+        <div
+          data-component={CLASS_NAME}
+          className={classNames(CLASS_NAME, className)}
+          {...props}
+        />
+      </Draggable>
     );
   }
 }

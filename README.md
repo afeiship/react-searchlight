@@ -17,11 +17,10 @@ npm update @feizheng/react-searchlight
 ```
 
 ## properties
-| Name      | Type   | Required | Default | Description                           |
-| --------- | ------ | -------- | ------- | ------------------------------------- |
-| className | string | false    | -       | The extended className for component. |
-| value     | object | false    | null    | The changed value.                    |
-| onChange  | func   | false    | noop    | The change handler.                   |
+| Name      | Type   | Required | Default | Description                              |
+| --------- | ------ | -------- | ------- | ---------------------------------------- |
+| className | string | false    | -       | The extended className for component.    |
+| options   | object | false    | -       | The default options for react-draggable. |
 
 
 ## usage
@@ -46,8 +45,11 @@ npm update @feizheng/react-searchlight
         <ReactDemokit
           className="p-3 app-container"
           url="https://github.com/afeiship/react-searchlight">
-          <ReactSearchlight className="bg-gray-800 mb-5 text-white" />
-          <button className="button">Start~</button>
+          <h1 className="text-center mb-5 text-white text-2xl">
+            Searchlight for react.
+          </h1>
+          <iframe width="100%" src="https://m.baidu.com"></iframe>
+          <ReactSearchlight />
         </ReactDemokit>
       );
     }

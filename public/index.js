@@ -1,7 +1,6 @@
 import ReactDemokit from '@feizheng/react-demokit';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Draggable from 'react-draggable'; // The default
 import ReactSearchlight from '../src/main';
 import './assets/style.scss';
 
@@ -15,9 +14,7 @@ class App extends React.Component {
           Searchlight for react.
         </h1>
         <iframe width="100%" src="https://m.baidu.com"></iframe>
-        <Draggable>
-          <ReactSearchlight />
-        </Draggable>
+        <ReactSearchlight />
       </ReactDemokit>
     );
   }
