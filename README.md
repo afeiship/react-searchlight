@@ -8,12 +8,7 @@
 
 ## installation
 ```shell
-npm install -S @feizheng/react-searchlight
-```
-
-## update
-```shell
-npm update @feizheng/react-searchlight
+npm install -S @jswork/react-searchlight
 ```
 
 ## properties
@@ -26,17 +21,20 @@ npm update @feizheng/react-searchlight
 ## usage
 1. import css
   ```scss
-  @import "~@feizheng/react-searchlight/dist/style.scss";
+  @import "~@jswork/react-searchlight/dist/style.css";
+
+  // or use sass
+  @import "~@jswork/react-searchlight/dist/style.scss";
 
   // customize your styles:
   $react-searchlight-options: ()
   ```
 2. import js
   ```js
-  import ReactDemokit from '@feizheng/react-demokit';
+  import ReactDemokit from '@jswork/react-demokit';
   import React from 'react';
   import ReactDOM from 'react-dom';
-  import ReactSearchlight from '@feizheng/react-searchlight';
+  import ReactSearchlight from '@jswork/react-searchlight';
   import './assets/style.scss';
 
   class App extends React.Component {
@@ -66,14 +64,14 @@ npm update @feizheng/react-searchlight
 ## license
 Code released under [the MIT license](https://github.com/afeiship/react-searchlight/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/react-searchlight
-[version-url]: https://npmjs.org/package/@feizheng/react-searchlight
+[version-image]: https://img.shields.io/npm/v/@jswork/react-searchlight
+[version-url]: https://npmjs.org/package/@jswork/react-searchlight
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/react-searchlight
+[license-image]: https://img.shields.io/npm/l/@jswork/react-searchlight
 [license-url]: https://github.com/afeiship/react-searchlight/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/react-searchlight
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/react-searchlight
 [size-url]: https://github.com/afeiship/react-searchlight/blob/master/dist/react-searchlight.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/react-searchlight
-[download-url]: https://www.npmjs.com/package/@feizheng/react-searchlight
+[download-image]: https://img.shields.io/npm/dm/@jswork/react-searchlight
+[download-url]: https://www.npmjs.com/package/@jswork/react-searchlight

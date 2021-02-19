@@ -1,0 +1,7 @@
+.react-searchlight {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.89);
+  background: transparent;
+  z-index: 10; }
